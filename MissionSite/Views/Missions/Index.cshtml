@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron"><h1>Learn about your Mission.</h1></div>
+
+<div class="container">
+    <div class="col-lg-5"></div>
+    <div class="col-lg-2">
+        
+        <div class="dropdown">
+
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Choose One
+                <span class="caret"></span>
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a href="@Url.Action("MissionFAQs", "Missions", new { missionName = "Barcelona" })">Barcelona, Spain</a></li>
+                <li><a href="@Url.Action("MissionFAQs", "Missions", new { missionName = "Malaga" })">Malaga, Spain</a></li>
+                <li><a href="@Url.Action("MissionFAQs", "Missions", new { missionName = "Arcadia" })">Arcadia, California</a></li>
+            </ul>
+
+            
+        </div>
+    </div>
+    <div class="col-lg-5">
+
+    </div>
+</div>
