@@ -26,62 +26,65 @@
     <br />
     Dominate Religion: @ViewBag.MissionReligion
     <br /><br />
-    Country Flag: <img style="height:200px; width:auto;" src="@ViewBag.MissionFlag" alt="Flag"/>
+    Country Flag: 
+    <br /> <br />
+    <img style="height:200px; width:auto;" src="@ViewBag.MissionFlag" alt="Flag"/>
 </p>
 <br />
 <h3>Q&A </h3>
 <br />
-Q - What was your favorite area? 
-<br />
-A - Barcelona
-<br />
-A - Elche
-<br />
-A - Tarragona
-<form method="post">
- Reply:<br />
-<textarea name='comment' id='comment'></textarea><br />
-
-<input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
-
-<input type='submit' value='Submit' />
-</form>
-<br />
-Q - What were some favorite foods?
-<br />
-A - Tapas
-<br />
-A - Paella
-<br />
-A - Chorizo
-<form method="post">
-    Reply:<br />
-    <textarea name='comment' id='comment'></textarea><br />
-
-    <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
-
-    <input type='submit' value='Submit' />
-</form> 
-<br />
-Q - What are some interesting facts about the Barcelona mission?
-<br />
-A - The Spain Barcelona Mission takes in both Spain and Andora and offers the opportunity to experience different cultures depending on the area you are in. Catalan is spoken in certain areas along with many cultures speaking French, Portuguese, Romanian, and other languages. There is a ton of history that is seen wherever you are and is expressed often in the festivals. 
-<br />
-A - Art by Gaudi; Catalonia is trying to separate itself from the rest of Spain and become an independent nation; it’s on the Mediteranean coast and has a ton of history.
-<br />
-A - We are the El Faro mission, which means the lighthouse. We were, at the time, the highest baptizing mission in Europe because our mission president taught us that if we were obedient with exactness, we would be blessed. And we were.
-<form method="post">
-    Reply:<br />
-    <textarea name='comment' id='comment'></textarea><br />
-
-    <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+<div class="smalllink" ?>
+    Q - What was your favorite area?
     <br />
-    <input type='submit' value='Submit' />
-</form> 
+    A - Barcelona
+    <br />
+    A - Elche
+    <br />
+    A - Tarragona
+    <form method="post">
+        Reply:<br />
+        <textarea name='comment' id='comment'></textarea><br />
 
-<br />
-<br />
+        <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
 
+        <input type='submit' value='Submit' />
+    </form>
+    <br />
+    Q - What were some favorite foods?
+    <br />
+    A - Tapas
+    <br />
+    A - Paella
+    <br />
+    A - Chorizo
+    <form method="post">
+        Reply:<br />
+        <textarea name='comment' id='comment'></textarea><br />
+
+        <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+        <input type='submit' value='Submit' />
+    </form>
+    <br />
+    Q - What are some interesting facts about the Barcelona mission?
+    <br />
+    A - The Spain Barcelona Mission takes in both Spain and Andora and offers the opportunity to experience different cultures depending on the area you are in. Catalan is spoken in certain areas along with many cultures speaking French, Portuguese, Romanian, and other languages. There is a ton of history that is seen wherever you are and is expressed often in the festivals.
+    <br />
+    A - Art by Gaudi; Catalonia is trying to separate itself from the rest of Spain and become an independent nation; it’s on the Mediteranean coast and has a ton of history.
+    <br />
+    A - We are the El Faro mission, which means the lighthouse. We were, at the time, the highest baptizing mission in Europe because our mission president taught us that if we were obedient with exactness, we would be blessed. And we were.
+    <form method="post">
+        Reply:<br />
+        <textarea name='comment' id='comment'></textarea><br />
+
+        <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+        <br />
+        <input type='submit' value='Submit' />
+    </form>
+
+    <br />
+    <br />
+</div>
 <h3>Add More Questions Here:</h3>
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
         <div class="row">
